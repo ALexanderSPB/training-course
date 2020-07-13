@@ -51,7 +51,9 @@ module.exports = {
       minify: {
         removeComments: isProd,
         collapseWhitespace: isProd
-      }
+      },
+      reloadAll: true,
+      hmr: true
     }),
     new CopyPlugin({
       patterns: [
